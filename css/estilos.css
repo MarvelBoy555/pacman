@@ -8,8 +8,10 @@ body{
     height: 100vh;
     background-color: black;
     background-image: url(../images/0ad1d7cef24a77e15099915897edb089.gif);
+    background-size: cover;
     color: gold;
     font-family: 'Press Start 2P', cursive;
+    
 }
 .fondo {
     background-image: url(../images/29653.png);
@@ -34,4 +36,69 @@ body{
 .centrar{
     display: flex !important;
     justify-content: center;
+}
+
+audio {
+    width: 300px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0);
+  }
+  
+  audio::-webkit-media-controls-panel {
+    background-color: rgba(101, 128, 215, 0);
+    color: #33333300;
+    border-radius: 5px;
+  }
+  
+  audio::-webkit-media-controls-play-button {
+    background-color: rgba(101, 128, 215, 0);
+    color: #ffffff00;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+  }
+  
+  audio::-webkit-media-controls-timeline {
+    background-color: rgba(101, 128, 215, 0);
+    height: 5px;
+  }
+  
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    font-size: 12px;
+    color: rgba(101, 128, 215, 0);
+    margin: 0 5px;
+  }
+
+  @media screen and (min-width: 1299px) and (max-width: 1399px) {
+    @keyframes pacman {
+      0% {top: 215px; left: 0px;}
+      25% {top: 215px; left: 314px;}
+      75% {top: 265px; left: 314px;}
+      100% {top: 265px;}
+  }
+}
+
+@media screen and (min-width: 1199px) and (max-width: 1298px) {
+  @keyframes pacman {
+    0% {top: 174px; left: 0px;}
+    25% {top: 174px; left: 263px;}
+    75% {top: 265px; left: 263px;}
+    100% {top: 265px;}
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 990px) {
+  @keyframes pacman {
+    0% {top: 205px; left: 0px;}
+    25% {top: 202px; left: 292px;}
+    75% {top: 245px; left: 300px;}
+    100% {top: 265px;}
+}
 }
